@@ -26,6 +26,7 @@ dependencies:
       - virtualenvwrapper
       - iniconfig
       - pluggy
+      - Radon
 
       # Utils / plotting
       - joblib
