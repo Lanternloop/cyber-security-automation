@@ -1,0 +1,75 @@
+# === Python bytecode and cache ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# === Conda environments ===
+env/
+env.bak/
+*.conda
+
+# Optional local venv (if ever used)
+.venv/
+
+# === Conda lock and cache files ===
+conda-lock.yml
+*.lock
+
+# === Pip and setuptools files ===
+*.egg-info/
+*.eggs/
+pip-wheel-metadata/
+wheels/
+*.whl
+
+# === Build and dist folders ===
+build/
+dist/
+
+# === IDE settings ===
+.idea/          # PyCharm
+.vscode/        # VS Code
+
+# === macOS system files ===
+.DS_Store
+
+# === Logs, temp, and swap files ===
+*.log
+*.tmp
+*.bak
+*.swp
+
+# === Jupyter ===
+.ipynb_checkpoints/
+
+# === Coverage and testing ===
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+pytest_cache/
+
+# === Docker ===
+*.tar
+docker-compose.override.yml
+docker-compose.local.yml
+Dockerfile.local
+.docker/
+**/.dockerignore
+**/docker-compose*.yml
+.env.docker
+
+# === Secrets & environment files (handled separately) ===
+.env
+.env.*
+secrets.env
+*.key
+*.pem
+
+# === Optional data files ===
+data/
+output/
+results/

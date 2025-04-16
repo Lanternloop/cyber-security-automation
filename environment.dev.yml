@@ -1,0 +1,41 @@
+name: sec-auto-dev
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pandas
+  - requests
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - python-dateutil
+  - pytz
+
+  - pip:
+      # Dev tools
+      - black
+      - pytest
+      - python-dotenv
+      - pyyaml
+      - virtualenv
+      - virtualenv-clone
+      - virtualenvwrapper
+      - iniconfig
+      - pluggy
+
+      # Utils / plotting
+      - joblib
+      - platformdirs
+      - packaging
+      - fonttools
+      - kiwisolver
+      - pyparsing
+      - stevedore
+      - contourpy
+      - cycler
+      - pillow
+      - dotenv
