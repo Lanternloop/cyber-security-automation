@@ -1,0 +1,28 @@
+repos:
+  # Clean up whitespace and end-of-file formatting
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+
+  # Auto-format code using Black
+  - repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+      - id: black
+
+  # Enforce Python style using Flake8
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.2.0
+    hooks:
+      - id: flake8
+
+  # Detect common security issues in Python code
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.8.3
+    hooks:
+      - id: bandit
+        args: ["-r", "src"]
